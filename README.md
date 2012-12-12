@@ -1,7 +1,11 @@
 A Portal for Small Business Forms
+
 Author: Amos Davis
+
 Email: amos@davistime.com
+
 Date Created: ca. Winter 2009
+
 License: GNU GPLv3
 
 This web application was a personal project to facilitate form creation 
