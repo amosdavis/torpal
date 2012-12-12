@@ -1,0 +1,179 @@
+html body {
+padding:0px;
+margin:0px;
+height:100%;
+width:100%;
+}
+
+/*a{color:black;}*/
+/*a:hover{*/
+/*border-bottom:2px solid black;*/
+/*}*/
+
+/*This container holds all of the content inside the body.*/
+#container{
+position:relative;
+top:0px;
+left:0px;
+height:100%;
+width:100%;
+/* border:2px solid black; */
+}
+/*This is the header of the page which include the main links*/
+#header{
+position:relative;
+top:0px;
+left:0px;
+height:5%;
+width:100%;
+/*width:8in;*/
+/*height:2in;*/
+border-bottom: 1px solid black;
+}
+
+.logo{
+float:right;
+}
+
+#menu div{
+text-decoration:none;
+float:right;
+}
+
+
+
+
+/*This css was gotten from http://javascript-array.com/scripts/jquery_simple_drop_down_menu/*/
+/*BEGIN COPIED CSS*/
+#ddmenus
+{	margin: 0;
+	padding: 0}
+	
+	#ddmenus li
+	{	float: left;
+		list-style: none;
+		font: 12px Tahoma, Arial}
+
+	#ddmenus li a
+	{	display: block;
+		background: #20548E;
+		padding: 5px 12px;
+		text-decoration: none;
+		border-right: 1px solid white;
+		width: 70px;
+		color: #EAFFED;
+		white-space: nowrap}
+
+	#ddmenus li a:hover
+	{	background: #1A4473}
+		
+		#ddmenus li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border-top: 1px solid white}
+		
+		#ddmenus li ul li
+		{	float: none;
+			display: inline}
+		
+		#ddmenus li ul li a
+		{	width: auto;
+			background: #9F1B1B}
+		
+		#ddmenus li ul li a:hover
+		{	background: #7F1616}
+/*END COPIED CSS*/
+
+#footer{
+display:table-cell;
+position:absolute;
+width:99%;
+bottom:0px;
+/* border:2px solid blue; */
+}
+
+
+#techs_available{
+position:absolute;
+top:0px;
+right:0px;
+height:40%;
+width:100%;
+border-bottom:5px double black;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+#message_area{
+position:absolute;
+top:41%;
+right:0px;
+height:39%;
+width:100%;
+border-bottom:5px double black;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+#chat_area
+{
+position:absolute;
+top:81%;
+right:0px;
+height:18%;
+width:100%;
+/* border-bottom:5px solid black; */
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.chat_info{
+float:left;
+padding:1%;
+font-size:.8em;
+border-bottom:1px solid blue;
+width:99%;
+background:#20548E;
+color:white;
+}
+.chat_window_info{
+float:left;
+padding:1%;
+font-size:.8em;
+border-bottom:1px solid blue;
+width:99%;
+background:#20548E;
+color:white;
+}
+
+.available{
+/* display:none; */
+float:left;
+padding:4px;
+font-size:.8em;
+/* border-bottom:1px solid blue; */
+width:100%;
+background:white;
+color:black;
+}
+
+
+.chat_images img{
+float:right;
+width:15px;
+height:15px;
+}
+/*#maximize{border:2px solid black;}*/
+/*#minimize{border:2px solid blue;}*/
+
+/*This is the right sidebar that houses the chat*/
+#right_sidebar{
+position:fixed;
+bottom:0px;
+right:0px;
+height:93%;
+width:22%;
+border-left:1px solid black;
+}

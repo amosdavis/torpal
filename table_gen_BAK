@@ -1,0 +1,35 @@
+	var $rowcount=0;
+	var $trigger=0;
+		$(this).parent("span").css({"background":"white"});
+	var $object = $(this).parent("span")
+		$("#page").mousemove(function(e){
+			if(resizer==0){
+			$x_coord = e.pageX;
+			$y_coord = e.pageY;
+			$startingWidth = $(this).find("td").width();
+			$startingHeight = $(this).find("td").height();
+			$colsStartingSize = $object.find("td").size();
+			$rowsStartingSize = $object.find("tr").size();
+			resizer++;
+			}
+$("#mousedata").html(e.pageX-$x_coord);
+			//$object.css({"width":$startingWidth + e.pageX-$x_coord, "height":$startingHeight + e.pageY-$y_coord});
+			$(this).find("td").css({"width":$startingWidth + (e.pageX-$x_coord)/$(this).find("td").size()/8, "height":$startingHeight + (e.pageY-$y_coord)/$(this).find("td").size()/15});
+			/*if((e.pageY-$y_coord)%100==0) {$object.find("table").append("<tr class=tablerow></tr>");}
+
+			if((e.pageX-$x_coord)%100==0) {//add cells
+	$x_coord=e.pageX;
+			
+	$("tr").each(function (i){	
+
+		while ($(this).find("td").size()<$cellcount){
+			$(this).append("<td class=tablecell>&nbsp;</td>");
+			}
+		
+	});
+$cellcount++;
+
+}*/
+
+
+});
